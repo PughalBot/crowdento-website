@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Head from "next/head";
 
 const Hero = () => {
   const text = "Crowdento is an Event management company that excels in crafting unforgettable events. Merging local traditions with modern flair, we orchestrate experiences that resonate. Driven by precision and creativity, we're redefining gatherings in Chennai.";
@@ -9,6 +10,13 @@ const Hero = () => {
   };
   
   return (
+    <>
+    <Head>
+        <meta name="description" content="Crowdento is an Event management company that excels in crafting unforgettable events. Merging local traditions with modern flair, we orchestrate experiences that resonate. Driven by precision and creativity, we're redefining gatherings in Chennai."/>
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <link rel='icon' href='/cc1.png' />
+        <title>Crowdento</title>
+    </Head>
     <motion.section 
       id="hero" 
       className="h-screen bg-white flex flex-col items-center justify-center"
@@ -40,6 +48,7 @@ const Hero = () => {
       <img src="/arrow.png" onClick={() => handleScroll("about")} alt="arrow" className="h-10 md:h-14 w-auto" />
       </motion.div>
     </motion.section>
+    </>
   );
 };
 

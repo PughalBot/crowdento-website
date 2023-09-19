@@ -1,7 +1,15 @@
 import { motion } from "framer-motion";
+import Head from "next/head";
 
 const About = () => {
   return (
+    <>
+    <Head>
+        <meta name="description" content="Crowdento is an Event management company that excels in crafting unforgettable events. Merging local traditions with modern flair, we orchestrate experiences that resonate. Driven by precision and creativity, we're redefining gatherings in Chennai."/>
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <link rel='icon' href='/cc1.png' />
+        <title>About | Crowdento</title>
+    </Head>
     <motion.section 
       id="about" 
       className="h-fit bg-black flex flex-col pt-16 md:pt-24 space-y-4"
@@ -30,6 +38,7 @@ const About = () => {
         <p className="text-justify font-jb text-[#B3B3B3]"><span className="font-bold">Beyond Events, We Create Journeys:</span> Our mission is to move beyond traditional event management. With a blend of innovation, expertise, and a keen understanding of our clients' needs, we aim to craft journeys that are unforgettable..</p>
       </div>
       </motion.section>
+      </>
   );
 };
 
