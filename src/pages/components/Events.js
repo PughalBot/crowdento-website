@@ -12,6 +12,7 @@ const Events = () => {
     <Head>
         <meta name="description" content="Explore Crowdento's portfolio: a showcase of Chennai's most iconic events. Witness our expertise from intimate gatherings to grand soirees. Dive into a world of event excellence with us."/>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta property='og:image' content="/cc1.png"/>
         <link rel='icon' href='/cc1.png' />
         <title>Crowdento Events</title>
     </Head>
