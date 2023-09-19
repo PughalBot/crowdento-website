@@ -5,6 +5,10 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"></link>
+      <link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap" rel="stylesheet"></link>
+      <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet"></link>
+      <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet"></link>
+      <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap" rel="stylesheet"></link>
       <body>
         <Main />
         <NextScript />

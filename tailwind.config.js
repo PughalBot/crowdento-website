@@ -13,7 +13,11 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily: {
-        'lol' : ['Anton', 'sans-serif']
+        'lol' : ['Anton', 'sans-serif'],
+        'rs' : ['Rubik Iso', 'cursive'],
+        'bo' : ['Bungee Outline', 'cursive'],
+        'jb' : ['JetBrains Mono', 'monospace'],
+        'bs' : ['Big Shoulders Display', 'cursive'],
       },
     },
   },

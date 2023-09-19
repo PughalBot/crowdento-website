@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { motion } from "framer-motion";
 import Link from 'next/link';
 
 const Navbar = () => {
@@ -11,21 +10,10 @@ const Navbar = () => {
   };
 
   return (
-    <motion.nav className=" font-lol p-2 md:p-4 md:mx-6  md:rounded-full sticky top-2 bg-white md:border-2 border-black">
-      <div className="flex justify-between items-center">
-        {/* Logo */}
-        <img src="/fill logo.png" alt="Logo" className="h-8 w-auto" />
-
-        {/* Mobile menu button */}
-        <button 
-          className="md:hidden p-2 text-black text-xl" 
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          ☰
-        </button>
-
+    <div className=" font-lol p-2 md:p-4 md:mx-6 md:rounded-full sticky top-2 bg-white md:border-2 border-black">
+      <div className="flex justify-between">
         {/* Desktop navbar items */}
-        <ul className={`flex space-x-4 mr-6 text-lg ${isOpen ? 'block' : 'hidden'} md:flex`}>
+        <ul className={`flex space-x-4 w-full text-lg justify-between md:flex`}>
           <li>
             <button onClick={() => handleScroll("hero")} className="text-black">Home</button>
           </li>
@@ -40,7 +28,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-    </motion.nav>
+    </div>
   );
 };
 
