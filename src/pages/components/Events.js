@@ -21,7 +21,7 @@ const About = () => {
     >
       <h1 className="font-bs text-5xl font-medium text-black">Crowdento's Services</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-20 pb-6 p-4 py-10 md:pl-10 md:pr-10">
-      <Link href="#">
+      <Link href="/birthday">
       <div className="flex flex-col items-center transform transition-transform duration-200 hover:scale-110">
         <div className="w-80 h-80 md:w-96 md:h-96 border-2 border-black rounded-2xl flex flex-wrap flex-row items-contain items-center justify-center ">
           <img src="/bday.jpg" alt="Birthday Event" className="objects-contain px-4 py-4"/>
@@ -29,7 +29,7 @@ const About = () => {
         <h2 className="font-jb text-black font-medium cursor-pointer py-2 px-2">Birthday Events</h2>
       </div>
       </Link>
-      <Link href="#">
+      <Link href="/wedding">
       <div className="flex flex-col items-center transform transition-transform duration-200 hover:scale-110">
         <div className="w-80 h-80 md:w-96 md:h-96 border-2 border-black rounded-2xl flex flex-wrap flex-row items-contain items-center justify-center">
           <img src="/wed.jpg" alt="Wedding Event" className="objects-contain px-4 py-4"/>
@@ -37,7 +37,7 @@ const About = () => {
         <h2 className="font-jb text-black font-medium cursor-pointer py-2 px-2">Wedding Events</h2>
       </div>
       </Link>
-      <Link href="#">
+      <Link href="/corporate">
       <div className="flex flex-col items-center transform transition-transform duration-200 hover:scale-110">
         <div className="w-80 h-80 md:w-96 md:h-96 border-2 border-black rounded-2xl flex flex-wrap flex-row items-contain items-center  justify-center">
           <img src="/cop.jpg" alt="Corporate Event" className="objects-contain px-4 py-4"/>
@@ -45,7 +45,7 @@ const About = () => {
         <h2 className="font-jb text-black font-medium cursor-pointer py-2 px-2">Corporate Events</h2>
       </div>
       </Link>
-      <Link href="#">
+      <Link href="/college">
       <div className="flex flex-col items-center transform transition-transform duration-200 hover:scale-110">
         <div className="w-80 h-80 md:w-96 md:h-96 border-2 border-black rounded-2xl flex flex-wrap flex-row items-contain items-center  justify-center">
           <img src="/col.jpg" alt="Farewell & College Event" className="objects-cover px-4 py-4"/>
