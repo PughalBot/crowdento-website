@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className=" font-lol p-2 md:p-4 mx-6 rounded-full sticky top-2 bg-white border-2 border-black">
+    <div className=" font-lol p-2 md:p-4 mx-6 rounded-full sticky top-2 z-10 bg-white border-2 border-black">
       <div className="flex justify-between">
         {/* Desktop navbar items */}
         <ul className={`flex space-x-4 w-full text-lg pl-4 pr-4 md:pl-8 md:pr-8 justify-between md:flex`}>
@@ -21,7 +21,7 @@ const Navbar = () => {
             <button onClick={() => handleScroll("about")} className="text-black">About</button>
           </li>
           <li>
-            <button onClick={() => handleScroll("events")} className="text-black">Events</button>
+            <button onClick={() => handleScroll("services")} className="text-black">Services</button>
           </li>
           <li>
             <button onClick={() => handleScroll("contact")} className="text-black">Contact</button>
