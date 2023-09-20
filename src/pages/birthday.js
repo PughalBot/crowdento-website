@@ -16,7 +16,7 @@ const Birthday = () => {
             </Head>
             <div className="flex flex-col md:flex-row h-screen">
                 {/* Left Half */}
-                <div className="bg-black p-8 w-full lg::w-1/2 overflow-y-auto">
+                <div className="bg-black p-8 w-full lg:w-1/2 overflow-y-auto">
                 <div className="w-full flex justify-end">
                     <button 
                         className="text-[#f7f7f7] z-10"
@@ -25,9 +25,9 @@ const Birthday = () => {
                       <img src="/back.png" alt="Phone" className="w-10 h-auto" />
                     </button>
                     </div>
-                    <h1 className="font-bs text-5xl text-[#f7f7f7] mb-6">Birthday Party</h1>
+                    <h1 className="font-bs text-5xl text-[#f7f7f7] mb-6">Birthday Events</h1>
                     {/* Image for mobile and tablet views */}
-                    <img src="/bday.jpg" alt="Event Image" className="lg:hidden object-cover w-full h-2/3 mb-6" />
+                    <img src="/bday1.jpg" alt="Event Image" className="lg:hidden object-cover w-full h-2/3 mb-6" />
                     <h1 className="font-bold font-jb text-lg text-[#b3b3b3]">
                     Crowdento's Custom Birthday Celebrations in Chennai
                     </h1>
@@ -48,7 +48,7 @@ const Birthday = () => {
 
                 {/* Right Half for desktop view */}
                 <div className="hidden lg:block w-1/2 relative">
-                    <img src="/bday.jpg" alt="Event Image" className="absolute top-0 left-0 w-full h-full object-cover" />
+                    <img src="/bday1.jpg" alt="Event Image" className="absolute top-0 left-0 w-full h-full object-cover" />
                 </div>
             </div>
         </>
