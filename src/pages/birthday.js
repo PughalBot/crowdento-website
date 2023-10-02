@@ -17,7 +17,7 @@ const Birthday = () => {
             <div className="flex flex-col md:flex-row h-screen">
                 {/* Left Half */}
                 <div className="bg-black p-8 w-full lg:w-1/2 overflow-y-auto">
-                <div className="w-full flex justify-end">
+                <div className="w-full flex justify-start pb-4">
                     <button 
                         className="text-[#f7f7f7] z-10"
                         onClick={() => router.back()}

@@ -22,35 +22,27 @@ const Contact = () => {
       <h1 className="font-bs text-5xl text-[#f7f7f7]">Contact Us</h1>
       <p className="font-jb text-center text-[#b3b3b3] w-11/12 lg:w-2/5">If you have any questions or would like more information about our services, please feel free to contact us. We're here to help!</p>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 md:pt-10">
+      <div className="grid grid-cols-4 gap-4 md:gap-10 md:pt-10 pb-6">
         <Link href="https://www.instagram.com/crowdento" target="_blank">
         <div className="flex flex-col items-center">
-          <img src="/insta.png" alt="Phone" className="w-10 md:w-16 h-auto" />
-          <p className="font-jb text-[#b3b3b3] pt-2">Instagram</p> 
-          <p className="font-jb text-[#b3b3b3] pt-2 text-center w-11/12">Crowdento Events</p>
+          <img src="/insta.png" alt="Phone" className="w-6 md:w-10 h-auto" />
         </div>
         </Link>
 
         <Link href="tel:+919840457238" target="_blank">
         <div className="flex flex-col items-center ">
-          <img src="/phone.png" alt="Phone" className=" w-10 md:w-16 h-auto" />
-          <p className="font-jb text-[#b3b3b3] pt-2">Phone</p> 
-          <p className="font-jb text-[#b3b3b3] pt-2 text-center w-11/12">+91 9840457238</p>
+          <img src="/phone.png" alt="Phone" className=" w-6 md:w-10 h-auto" />
         </div>
         </Link>
 
         <Link href="mailto:contact@crowdento.com" target="_blank">
         <div className="flex flex-col items-center">
-          <img src="/email.png" alt="Phone" className="w-10 md:w-16 h-auto" />
-          <p className="font-jb text-[#b3b3b3] pt-2">Email</p>
-          <p className="font-jb text-[#b3b3b3] pt-2 text-center w-11/12">contact@crowdento.com</p>
+          <img src="/email.png" alt="Phone" className="w-6 md:w-10 h-auto" />
         </div>
         </Link>
       <Link href="https://wa.me/919840457238" target="_blank">
         <div className="flex flex-col items-center">
-          <img src="/wap.png" alt="Phone" className="w-10 md:w-16 h-auto" />
-          <p className="font-jb text-[#b3b3b3] pt-2">Whatsapp</p>
-          <p className="font-jb text-[#b3b3b3] pt-2 text-center w-11/12">+91 9840457238</p>
+          <img src="/wap.png" alt="Phone" className="w-6 md:w-10 h-auto" />
         </div>
         </Link>
       </div>
