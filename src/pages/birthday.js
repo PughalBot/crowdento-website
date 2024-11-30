@@ -9,7 +9,7 @@ const Birthday = () => {
     return (
         <>
             <Head>
-                <meta name="description" content="Crowdento is an Event management company that excels in crafting unforgettable events. Merging local traditions with modern flair, we orchestrate experiences that resonate. Driven by precision and creativity, we're redefining gatherings in Chennai."/>
+                <meta name="description" content=""/>
                 <meta name='viewport' content='width=device-width, initial-scale=1' />
                 <link rel='icon' href='/cc1.png' />
                 <title>Birthday Events | Crowdento</title>
