@@ -16,7 +16,7 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center">
         {/* Logo */}
-        <div>
+        <div onClick={() => handleScroll("hero")}>
           <img src="https://cdn.discordapp.com/attachments/981618787491127306/1334074586454822992/weblogo.png?ex=679b3547&is=6799e3c7&hm=432a6cce01b936257eaa19e3403baabd1dd42a571314eeb9a4c0269da6312bfd&" alt="Logo" className="h-[40px]" />
         </div>
 
