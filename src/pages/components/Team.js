@@ -38,7 +38,7 @@ const About = () => {
         />
 </div>
           {/* </h2> */}
-          <p className="font-medium text-gray-500 sm:text-xl  ">Here's the team building EBIV</p>
+          <p className="font-medium text-gray-500 sm:text-xl ">Here's the team building EBIV</p>
       </div> 
       <div className="grid gap-8 lg:gap-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           <div className="text-center text-gray-500  ">

@@ -20,9 +20,14 @@ const Hero = () => {
         <link rel='icon' href='/lol.png' />
         <title>EBIV | இபிவ்</title>
     </Head>
-    <Waves
+    
+    <section 
+      id="hero" 
+      className="h-screen bg-gradient-to-b from-[#E9CFF7] to-[#E8E2F1] flex flex-col items-center justify-center cursor-none"
+    >
+      <Waves
             lineColor="#eeaff2"
-            backgroundColor="rgba(255, 255, 255, 0.2)"
+            backgroundColor="rgba(255, 255, 255, 0)"
             waveSpeedX={0.02}
             waveSpeedY={0.01}
             waveAmpX={40}
@@ -32,16 +37,13 @@ const Hero = () => {
             maxCursorMove={120}
             xGap={12}
             yGap={36}
-          /> 
-    <motion.section 
-      id="hero" 
-      className="h-screen bg-gradient-to-b from-[#E9CFF7] to-[#E8E2F1] flex flex-col items-center justify-center"
+          />
+      <motion.div 
+      className=" flex justify-center items-center w-full"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.2, duration: 2 }}
-    >
-      
-      <div className=" flex justify-center items-center w-full">
+      >
         
           <Image
             src="https://cdn.discordapp.com/attachments/981618787491127306/1334074586454822992/weblogo.png?ex=679b3547&is=6799e3c7&hm=432a6cce01b936257eaa19e3403baabd1dd42a571314eeb9a4c0269da6312bfd&"
@@ -53,7 +55,7 @@ const Hero = () => {
           />
           <div>
           </div>
-        </div>     
+        </motion.div>     
       
       
       {/* <div className="font-pp font-medium w-11/12 tetx-center text-justify md:text-2xl mx-4 my-6 text-black">
@@ -77,7 +79,7 @@ const Hero = () => {
       >
       <img src="/arrow.png" onClick={() => handleScroll("about")} alt="arrow" className="h-10 md:h-14 w-auto" />
       </motion.div>
-    </motion.section>
+    </section>
     </>
   );
 };
