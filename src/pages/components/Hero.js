@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
+import Waves from "../Backgrounds/Waves/Waves";
 
 const Hero = () => {
   const text = "EBIV Clothing is an innovative venture poised to disrupt Chennai's streetwear scene. We leverage the distinctive properties of terry cotton to craft a line that resonates with global fashion trends, yet remains deeply rooted in the local culture. Our focus on customization and quality at affordable prices uniquely positions us in a rapidly evolving market.";
@@ -19,6 +20,7 @@ const Hero = () => {
         <link rel='icon' href='/lol.png' />
         <title>EBIV | இபிவ்</title>
     </Head>
+
     <motion.section 
       id="hero" 
       className="h-screen bg-gradient-to-b from-[#E9CFF7] to-[#E8E2F1] flex flex-col items-center justify-center"
@@ -26,7 +28,8 @@ const Hero = () => {
       animate={{ opacity: 1 }}
       transition={{ delay: 0.2, duration: 2 }}
     >
-      <div className="flex justify-center items-center w-full">
+      <div className=" flex justify-center items-center w-full">
+        
           <Image
             src="https://cdn.discordapp.com/attachments/981618787491127306/1334074586454822992/weblogo.png?ex=679b3547&is=6799e3c7&hm=432a6cce01b936257eaa19e3403baabd1dd42a571314eeb9a4c0269da6312bfd&"
             alt="Logo"
@@ -35,7 +38,23 @@ const Hero = () => {
             priority
             className="w-3/4 md:w-1/2 lg:w-1/3 max-w-[500px]"
           />
-        </div>
+          <div>
+          <Waves
+            lineColor="#eeaff2"
+            backgroundColor="rgba(255, 255, 255, 0.2)"
+            waveSpeedX={0.02}
+            waveSpeedY={0.01}
+            waveAmpX={40}
+            waveAmpY={20}
+            friction={0.9}
+            tension={0.01}
+            maxCursorMove={120}
+            xGap={12}
+            yGap={36}
+          /> 
+          </div>
+        </div>     
+      
       
       {/* <div className="font-pp font-medium w-11/12 tetx-center text-justify md:text-2xl mx-4 my-6 text-black">
         {text.split(" ").map((word, index) => (
