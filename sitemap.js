@@ -5,12 +5,7 @@ const xmlbuilder = require('xmlbuilder');
 const pages = [
   '/',
   '/about',
-  '/contact',
-  '/wedding',
-  '/college',
-  '/birthday',
-  '/corporate',
-  '/services', 
+  '/contact', 
 ];
 
 function generateSitemap() {
@@ -19,7 +14,7 @@ function generateSitemap() {
 
   pages.forEach(page => {
     const url = root.ele('url');
-    url.ele('loc', `https://croedento.com${page}`);
+    url.ele('loc', `https://ebiv.in${page}`);
     url.ele('changefreq', 'daily');
     url.ele('priority', '0.7');
   });

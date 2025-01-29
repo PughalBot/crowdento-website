@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Head from "next/head";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -14,7 +15,7 @@ const About = () => {
     </Head>
     <motion.section 
   id="about" 
-  className="h-fit bg-gradient-to-b from-[#E9CFF7] to-[#E8E2F1] flex flex-col pt-16 md:pt-24 pb-16 md:pb-24 space-y-4"
+  className="h-fit bg-gradient-to-b from-[#E9CFF7] to-[#E8E2F1] flex flex-col pt-16 md:pt-15 pb-16 md:pb-24 space-y-4"
   initial={{ opacity: 0 }}
   animate={{ opacity: 1 }}
   transition={{ delay: 0.5, duration: 1 }}
@@ -22,7 +23,7 @@ const About = () => {
 <div className="max-w-7xl mx-auto px-4 pt-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-4xl font-pp font-bold mb-6">The EBIV Story</h2>
+            <h2 className="text-4xl font-pp font-bold mb-6">Sollamarandha Kadhai of EBIV</h2>
             <p className="text-lg font-pp text-muted-foreground mb-6">
               EBIV represents the convergence of contemporary design and timeless elegance. 
               Our commitment to quality craftsmanship and sustainable practices sets us apart 
@@ -35,11 +36,15 @@ const About = () => {
             </p>
           </div>
           <div className="relative aspect-square">
-            <img
-              src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?q=80&w=2070"
-              alt="About EBIV"
-              className="object-cover w-full h-full rounded-lg"
-            />
+            <Image
+                        src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?q=80&w=2070"
+                        alt="About EBIV"
+                        width={300}
+                        height={200}
+                        priority
+                        className="object-cover w-full h-full rounded-lg"
+                      />
+
           </div>
         </div>
       </div>

@@ -55,7 +55,7 @@ export default function Footer() {
             
             <div class="py-7 border-t border-gray-200">
                 <div class="flex items-center justify-center flex-col lg:justify-between lg:flex-row">
-                <h1 className="text-black font-medium">{`© ${new Date().getFullYear()} Crowdento Events. All Rights Reserved.`}</h1>
+                <h1 className="text-black font-medium">{`© ${new Date().getFullYear()} EBIV. All Rights Reserved.`}</h1>
                     <div class="flex mt-4 space-x-4 sm:justify-center lg:mt-0 ">
                         <a href="https://www.x.com/ebiv_in" target="_blank" class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:bg-black">
                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">

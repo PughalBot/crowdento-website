@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Head from "next/head";
+import Image from "next/image";
 
 const Hero = () => {
   const text = "EBIV Clothing is an innovative venture poised to disrupt Chennai's streetwear scene. We leverage the distinctive properties of terry cotton to craft a line that resonates with global fashion trends, yet remains deeply rooted in the local culture. Our focus on customization and quality at affordable prices uniquely positions us in a rapidly evolving market.";
@@ -25,9 +26,18 @@ const Hero = () => {
       animate={{ opacity: 1 }}
       transition={{ delay: 0.2, duration: 2 }}
     >
-      <img src="/weblogo.png" alt="Logo" className=" w-2/3 md:w-1/3 " />
+      <div className="flex justify-center items-center w-full">
+          <Image
+            src="https://cdn.discordapp.com/attachments/981618787491127306/1334074586454822992/weblogo.png?ex=679b3547&is=6799e3c7&hm=432a6cce01b936257eaa19e3403baabd1dd42a571314eeb9a4c0269da6312bfd&"
+            alt="Logo"
+            width={500}
+            height={300}
+            priority
+            className="w-3/4 md:w-1/2 lg:w-1/3 max-w-[500px]"
+          />
+        </div>
       
-      <div className="font-pp font-medium w-11/12 tetx-center text-justify md:text-2xl mx-4 my-6 text-black">
+      {/* <div className="font-pp font-medium w-11/12 tetx-center text-justify md:text-2xl mx-4 my-6 text-black">
         {text.split(" ").map((word, index) => (
           <motion.span 
             key={index}
@@ -38,7 +48,7 @@ const Hero = () => {
             {word + " "}
           </motion.span>
         ))}
-      </div>
+      </div> */}
 
       <motion.div 
         className="absolute bottom-4 animate-bounce"
